@@ -1,7 +1,11 @@
 @import url("styles/header.css");
 
-:root{
-    --cor-de-fundo:#EBECEE;
+
+:root
+{
+    --cor-de-fundo:#303030;
+    --branco:#616060;
+    --laranja:#FECD2F;
    }
 
  body{
@@ -9,5 +13,5 @@
  }
 
  h1{
-    background-color:white;
+    background-color:rgb(255, 255, 255);
  }
