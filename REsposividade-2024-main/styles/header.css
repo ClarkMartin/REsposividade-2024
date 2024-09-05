@@ -1,8 +1,9 @@
 .cabecalho__menu-hamburguer
-{ width: 60px;
-    height: 30px;
+{ width: 24px;
+    height: 24px;
     background-image: url("../img/Menu.svg");
-    display: inline-block;    background-repeat:no-repeat ;
+    display: inline-block;    
+    background-repeat:no-repeat ;
     background-position:center ;
 }
 
@@ -10,6 +11,7 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .container{
@@ -19,4 +21,35 @@
 
 .cabecalho__imagem{
     padding: 1em;
+}
+
+.lista-menu
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container_botao:checked~ .lista_menu
+{
+    display: block;
+}
+
+.lista_menu_titulo
+{
+    color: var(--laranja);
+}
+
+.lista-menu_titulo, .lista-menu_item
+{
+    padding: 1em;
+    background-color: var(--braco);
+}
+
+.lista-menu_link
+{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: uppercase;
 }
